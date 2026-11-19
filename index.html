@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PermisB_229 — Code de la route (Bénin)</title>
+<meta name="author" content="PermisB_229">
+<meta name="theme-color" content="#14508c">
+<link rel="manifest" href="manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PermisB_229">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
+
+<style>
+  :root{
+    --bg: #14171a;
+    --bg-soft: #1c2024;
+    --paper: #f4f2ec;
+    --paper-dim: #e9e6dc;
+    --ink: #1a1d1f;
+    --ink-muted: #5c6066;
+    --blue: #14508c;
+    --blue-dark: #0d3963;
+    --yellow: #f5b700;
+    --green: #1e7b4d;
+    --green-dark: #145b38;
+    --red: #c81d25;
+    --red-dark: #9c1219;
+    --grey-plate: #2b2e33;
+    --radius: 6px;
+    --serif: Georgia, 'Times New Roman', serif;
+    --display: 'Arial Narrow', 'Helvetica Neue Condensed', Impact, Haettenschweiler, sans-serif;
+    --body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--paper);
+    font-family:var(--body);
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  button{font-family:inherit;}
+
+  #app{max-width:840px;margin:0 auto;padding:28px 20px 80px;}
+  .screen{display:none;}
+  .screen.active{display:block;}
+
+  .masthead{
+    display:flex;align-items:baseline;justify-content:space-between;
+    border-bottom:3px solid var(--yellow);
+    padding-bottom:14px;margin-bottom:26px;
+    gap:12px;flex-wrap:wrap;
+  }
+  .masthead .brand{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:26px;
+    letter-spacing:0.5px;
+    color:var(--paper);
+    text-transform:uppercase;
+  }
+  .masthead .brand small{
+    display:block;
+    font-family:var(--body);
+    font-weight:400;
+    text-transform:none;
+    font-size:13px;
+    color:#9a9f9c;
+    letter-spacing:0;
+    margin-top:2px;
+  }
+  .masthead .brand small.tagline{color:var(--yellow);font-style:italic;font-weight:600;margin-top:6px;font-size:14px;}
+  .badge-count{
+    font-family:var(--display);
+    font-size:15px;
+    color:var(--yellow);
+    border:2px solid var(--yellow);
+    padding:5px 12px;
+    border-radius:3px;
+    white-space:nowrap;
+  }
+
+  .hero-copy{margin:0 0 30px;}
+  .hero-copy h1{
+    font-family:var(--display);
+    font-size:34px;
+    line-height:1.08;
+    margin:0 0 10px;
+    color:var(--paper);
+    max-width:16ch;
+    font-weight:800;
+  }
+  .hero-copy p{
+    color:#a9aeab;
+    font-size:16px;
+    line-height:1.55;
+    max-width:52ch;
+    margin:0;
+  }
+
+  .chapter-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:24px;
+  }
+  @media (max-width:560px){ .chapter-grid{grid-template-columns:1fr;} }
+
+  .chapter-card{
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:var(--radius);
+    padding:16px 16px 14px;
+    text-align:left;
+    cursor:pointer;
+    border:none;
+    border-left:8px solid var(--blue);
+    position:relative;
+    transition:transform .12s ease;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .chapter-card:hover{transform:translateY(-2px);}
+  .chapter-card:active{transform:translateY(0);}
+  .chapter-card .roman{
+    font-family:var(--display);
+    font-size:13px;
+    font-weight:800;
+    color:var(--blue);
+    letter-spacing:1px;
+  }
+  .chapter-card .title{
+    font-size:16px;
+    font-weight:700;
+    line-height:1.25;
+  }
+  .chapter-card .meta{
+    font-size:13px;
+    color:var(--ink-muted);
+  }
+
+  .all-card{
+    grid-column:1 / -1;
+    border-left:8px solid var(--yellow);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .all-card .title{font-size:18px;}
+  .all-card .go{
+    font-family:var(--display);
+    font-weight:800;
+    color:var(--bg);
+    background:var(--yellow);
+    padding:9px 18px;
+    border-radius:3px;
+    font-size:14px;
+    letter-spacing:.3px;
+  }
+
+  .quiz-top{
+    display:flex;align-items:center;justify-content:space-between;
+    margin-bottom:16px;gap:10px;flex-wrap:wrap;
+  }
+  .back-link{
+    background:none;border:none;color:#9a9f9c;font-size:14px;cursor:pointer;
+    padding:6px 0;display:flex;align-items:center;gap:6px;
+  }
+  .back-link:hover{color:var(--paper);}
+  .progress-wrap{
+    flex:1;min-width:160px;margin:0 16px;
+  }
+  .progress-label{
+    font-size:12px;color:#9a9f9c;margin-bottom:5px;
+    display:flex;justify-content:space-between;
+  }
+  .progress-track{
+    height:8px;background:var(--bg-soft);border-radius:4px;overflow:hidden;
+    border:1px solid #2c3136;
+  }
+  .progress-fill{
+    height:100%;background:var(--yellow);width:0%;
+    transition:width .25s ease;
+  }
+  .score-pill{
+    font-family:var(--display);
+    font-size:14px;font-weight:800;
+    color:var(--green);
+    white-space:nowrap;
+  }
+
+  .chapter-tag{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    color:var(--blue);
+    background:#dfeaf5;
+    padding:3px 9px;
+    border-radius:3px;
+    margin-bottom:14px;
+  }
+
+  .q-card{
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:var(--radius);
+    padding:22px 22px 24px;
+  }
+  .q-num{
+    font-family:var(--display);
+    font-size:13px;
+    color:var(--ink-muted);
+    font-weight:700;
+    margin-bottom:6px;
+  }
+  .q-text{
+    font-size:19px;
+    line-height:1.4;
+    font-weight:700;
+    margin:0 0 16px;
+  }
+  .q-images{
+    display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;
+  }
+  .q-images img{
+    max-width:220px;max-height:190px;
+    border:2px solid var(--paper-dim);
+    border-radius:4px;
+    background:#fff;
+    display:block;
+  }
+
+  .options{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;}
+  .option{
+    border:2px solid var(--paper-dim);
+    border-radius:4px;
+    padding:11px 13px;
+    display:flex;
+    align-items:flex-start;
+    gap:11px;
+    cursor:pointer;
+    background:#fff;
+    transition:border-color .1s ease, background .1s ease;
+  }
+  .option:hover{border-color:var(--blue);}
+  .option .letter{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:14px;
+    width:22px;height:22px;
+    border-radius:50%;
+    border:2px solid var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+    margin-top:1px;
+  }
+  .option .otext{font-size:15.5px;line-height:1.4;white-space:pre-line;}
+  .option.selected{border-color:var(--blue);background:#eaf1f8;}
+  .option.selected .letter{background:var(--blue);color:#fff;border-color:var(--blue);}
+
+  .option.correct{border-color:var(--green);background:#e8f5ee;}
+  .option.correct .letter{background:var(--green);color:#fff;border-color:var(--green);}
+  .option.incorrect{border-color:var(--red);background:#fbeaea;}
+  .option.incorrect .letter{background:var(--red);color:#fff;border-color:var(--red);}
+  .option.missed{border-color:var(--green);background:#fff;}
+  .option.missed .letter{border-color:var(--green);color:var(--green);}
+  .option.disabled{cursor:default;}
+
+  .feedback{
+    margin-top:16px;
+    padding:12px 14px;
+    border-radius:4px;
+    font-size:14.5px;
+    font-weight:700;
+    display:none;
+  }
+  .feedback.show{display:block;}
+  .feedback.ok{background:#e8f5ee;color:var(--green-dark);}
+  .feedback.ko{background:#fbeaea;color:var(--red-dark);}
+
+  .actions{
+    display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:20px;flex-wrap:wrap;
+  }
+  .actions-right{display:flex;gap:10px;flex-wrap:wrap;}
+  .btn{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:14px;
+    letter-spacing:.3px;
+    padding:11px 22px;
+    border-radius:3px;
+    border:none;
+    cursor:pointer;
+  }
+  .btn:disabled{opacity:.4;cursor:not-allowed;}
+  .btn-primary{background:var(--blue);color:#fff;}
+  .btn-primary:hover:not(:disabled){background:var(--blue-dark);}
+  .btn-ghost{background:transparent;color:#9a9f9c;border:2px solid #3a3f44;}
+  .btn-ghost:hover{color:var(--paper);border-color:#5a6066;}
+
+  .results-card{
+    background:var(--paper);color:var(--ink);
+    border-radius:var(--radius);
+    padding:32px 26px;text-align:center;
+  }
+  .results-card .big-score{
+    font-family:var(--display);
+    font-size:64px;font-weight:800;color:var(--blue);
+    line-height:1;
+  }
+  .results-card .big-score span{font-size:28px;color:var(--ink-muted);}
+  .results-card .verdict{
+    font-size:17px;font-weight:700;margin:10px 0 4px;
+  }
+  .results-card .sub{color:var(--ink-muted);font-size:14px;margin-bottom:22px;}
+  .results-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px;}
+
+  .missed-list{
+    text-align:left;margin-top:26px;border-top:1px solid var(--paper-dim);padding-top:18px;
+  }
+  .missed-list h3{font-size:14px;margin:0 0 10px;color:var(--ink-muted);font-weight:700;}
+  .missed-item{
+    font-size:13.5px;padding:8px 0;border-bottom:1px solid var(--paper-dim);
+    display:flex;gap:8px;
+  }
+  .missed-item .mnum{color:var(--red);font-weight:800;flex-shrink:0;}
+  .missed-item.skip .mnum{color:var(--ink-muted);}
+
+  .res-timestamp{
+    font-size:12.5px;color:var(--ink-muted);margin-bottom:14px;
+  }
+
+  .competencies{
+    text-align:left;margin-top:28px;border-top:1px solid var(--paper-dim);padding-top:18px;
+  }
+  .competencies h3{font-size:14px;margin:0 0 12px;color:var(--ink-muted);font-weight:700;}
+  .comp-row{margin-bottom:12px;}
+  .comp-row-top{
+    display:flex;justify-content:space-between;align-items:baseline;
+    font-size:13.5px;margin-bottom:5px;gap:8px;
+  }
+  .comp-row-top .comp-name{font-weight:700;}
+  .comp-row-top .comp-tag{
+    font-family:var(--display);font-weight:800;font-size:11.5px;
+    padding:2px 8px;border-radius:3px;white-space:nowrap;
+  }
+  .comp-tag.acquis{background:#e8f5ee;color:var(--green-dark);}
+  .comp-tag.bonne-voie{background:#fff6e0;color:#8a6200;}
+  .comp-tag.consolider{background:#fbeaea;color:var(--red-dark);}
+  .comp-tag.non-evalue{background:var(--paper-dim);color:var(--ink-muted);}
+  .comp-bar-track{
+    height:7px;background:var(--paper-dim);border-radius:4px;overflow:hidden;
+  }
+  .comp-bar-fill{height:100%;background:var(--blue);}
+  .comp-row-sub{font-size:11.5px;color:var(--ink-muted);margin-top:3px;}
+
+  footer.appfoot{
+    text-align:center;color:#5c6066;font-size:12px;margin-top:44px;line-height:1.6;
+  }
+
+  .install-hint{
+    margin-top:22px;
+    border:2px dashed #3a3f44;
+    border-radius:var(--radius);
+    padding:14px 16px;
+  }
+  .install-hint-title{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:13px;
+    color:var(--yellow);
+    letter-spacing:.3px;
+    margin-bottom:6px;
+  }
+  .install-hint-body{
+    font-size:13px;
+    color:#a9aeab;
+    line-height:1.6;
+  }
+
+  /* ---- Authentification ---- */
+  body.locked #app{display:none;}
+  #auth-gate{display:none;position:fixed;inset:0;z-index:999;background:var(--blue-dark,#0d3963);align-items:center;justify-content:center;padding:16px;overflow:auto;}
+  body.locked #auth-gate{display:flex;}
+  .auth-card{background:#fff;border-radius:14px;max-width:420px;width:100%;padding:26px 22px;box-shadow:0 10px 40px rgba(0,0,0,.35);color:#222;}
+  .auth-card h2{margin:0 0 6px;font-size:22px;color:var(--blue);}
+  .auth-card p{margin:0 0 14px;font-size:14px;line-height:1.5;color:#555;}
+  .auth-card input{width:100%;box-sizing:border-box;padding:13px 12px;font-size:17px;border:2px solid #cfd6de;border-radius:10px;margin-bottom:12px;}
+  .auth-card input:focus{outline:none;border-color:var(--blue);}
+  #auth-code{letter-spacing:8px;text-align:center;font-size:24px;}
+  .auth-msg{min-height:20px;font-size:13.5px;margin:2px 0 12px;}
+  .auth-msg.err{color:var(--red);} .auth-msg.ok{color:#1e7b4d;}
+  .auth-link{background:none;border:0;color:var(--blue);text-decoration:underline;font-size:13.5px;margin-top:10px;cursor:pointer;padding:0;}
+  .logout-btn{background:none;border:1px solid rgba(255,255,255,.6);color:inherit;border-radius:8px;font-size:12px;padding:4px 9px;margin-left:8px;cursor:pointer;}
+</style>
+</head>
+<body class="locked">
+<div id="auth-gate">
+  <div class="auth-card">
+    <div id="auth-step-email">
+      <h2>PermisB_229</h2>
+      <p>Accès réservé. Saisissez votre adresse e-mail : un code de connexion à 6 chiffres vous y sera envoyé.</p>
+      <input id="auth-email" type="email" inputmode="email" autocomplete="email" placeholder="votre@email.com">
+      <button class="btn btn-primary" id="auth-send" style="width:100%">Recevoir le code</button>
+    </div>
+    <div id="auth-step-code" style="display:none">
+      <h2>Code de vérification</h2>
+      <p id="auth-code-info">Saisissez le code reçu par e-mail.</p>
+      <input id="auth-code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="••••••">
+      <button class="btn btn-primary" id="auth-verify" style="width:100%">Se connecter</button>
+      <button class="auth-link" id="auth-resend">Renvoyer le code</button><br>
+      <button class="auth-link" id="auth-back">Changer d’adresse e-mail</button>
+    </div>
+    <div id="auth-msg" class="auth-msg"></div>
+  </div>
+</div>
+<div id="app">
+
+  <section class="screen active" id="screen-home">
+    <div class="masthead">
+      <div class="brand">PermisB_229<small>Permis de conduire catégorie B — Bénin</small><small class="tagline">Apprendre, comprendre et réussir son permis de conduire au Bénin.</small></div>
+      <div class="badge-count" id="total-count-badge">172 questions</div>
+    </div>
+
+    <div class="hero-copy">
+      <h1>Préparez votre examen du code de la route.</h1>
+      <p>Choisissez un thème pour vous entraîner, ou lancez le test complet. Certaines questions ont plusieurs bonnes réponses : cochez-les toutes avant de valider. Après chaque question, vous voyez immédiatement la ou les bonnes réponses.</p>
+    </div>
+
+    <div class="chapter-grid" id="chapter-grid"></div>
+
+    <div class="install-hint" id="install-hint">
+      <div class="install-hint-title">Installer comme application</div>
+      <div class="install-hint-body">
+        <strong>Android (Chrome) :</strong> menu ⋮ → « Ajouter à l'écran d'accueil » / « Installer l'application ».<br>
+        <strong>iPhone (Safari) :</strong> bouton Partager → « Sur l'écran d'accueil ».
+      </div>
+    </div>
+
+    <footer class="appfoot">Source : Code de la route du Bénin<br>Application : <strong>PermisB_229</strong><br>© Novembre 2026 – Tous droits réservés.<br>Contact : kgbgroup6@gmail.com / WhatsApp : (+229) 01 96 91 67 18<br>Réalisation : KGB CONNECT</footer>
+  </section>
+
+  <section class="screen" id="screen-quiz">
+    <div class="quiz-top">
+      <button class="back-link" id="btn-home">&larr; Thèmes</button>
+      <div class="progress-wrap">
+        <div class="progress-label"><span id="progress-text">Question 1/1</span></div>
+        <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      </div>
+      <div class="score-pill" id="score-pill">0 ✓</div>
+    </div>
+
+    <div id="chapter-tag" class="chapter-tag"></div>
+
+    <div class="q-card">
+      <div class="q-num" id="q-num"></div>
+      <p class="q-text" id="q-text"></p>
+      <div class="q-images" id="q-images"></div>
+      <ul class="options" id="options-list"></ul>
+      <div class="feedback" id="feedback"></div>
+      <div class="actions">
+        <button class="btn btn-ghost" id="btn-prev">&larr; Précédent</button>
+        <div class="actions-right">
+          <button class="btn btn-ghost" id="btn-skip">Passer</button>
+          <button class="btn btn-primary" id="btn-validate" disabled>Valider</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-results">
+    <div class="quiz-top">
+      <button class="back-link" id="btn-home2">&larr; Thèmes</button>
+    </div>
+    <div class="results-card">
+      <div class="res-timestamp" id="res-timestamp"></div>
+      <div class="big-score"><span id="res-score"></span><span id="res-total"></span></div>
+      <div class="verdict" id="res-verdict"></div>
+      <div class="sub" id="res-sub"></div>
+      <div class="results-actions">
+        <button class="btn btn-primary" id="btn-retry">Recommencer ce thème</button>
+        <button class="btn btn-ghost" id="btn-home3">Autre thème</button>
+      </div>
+
+      <div class="competencies" id="competencies-wrap">
+        <h3>Compétences acquises</h3>
+        <div id="competencies-list"></div>
+      </div>
+
+      <div class="missed-list" id="skipped-list"></div>
+      <div class="missed-list" id="missed-list"></div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+let DATA = null; // chargé après connexion depuis le service sécurisé (non présent dans ce fichier);
+
+const CHAPTER_COLORS = {"I":"#14508c","II":"#c81d25","III":"#14508c","IV":"#c81d25","V":"#1e7b4d","VI":"#2b2e33"};
+
+let session = null;
+
+function el(id){ return document.getElementById(id); }
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  el(id).classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function buildHome(){
+  el('total-count-badge').textContent = DATA.questions.length + ' questions';
+  const grid = el('chapter-grid');
+  grid.innerHTML = '';
+
+  const allCard = document.createElement('button');
+  allCard.className = 'chapter-card all-card';
+  allCard.innerHTML = `<div><div class="roman">TOUS LES THÈMES</div>
+    <div class="title">Test complet — ${DATA.questions.length} questions</div>
+    <div class="meta">Toutes les fiches de l\'auto-école</div></div>
+    <div class="go">Commencer</div>`;
+  allCard.addEventListener('click', ()=>startQuiz('ALL'));
+  grid.appendChild(allCard);
+
+  const counts = {};
+  DATA.questions.forEach(q=>{ counts[q.chapter] = (counts[q.chapter]||0)+1; });
+
+  Object.keys(DATA.chapters).forEach(key=>{
+    const count = counts[key] || 0;
+    if(!count) return;
+    const card = document.createElement('button');
+    card.className = 'chapter-card';
+    card.style.borderLeftColor = CHAPTER_COLORS[key] || '#14508c';
+    card.innerHTML = `<div class="roman">THÈME ${key}</div>
+      <div class="title">${DATA.chapters[key]}</div>
+      <div class="meta">${count} questions</div>`;
+    card.addEventListener('click', ()=>startQuiz(key));
+    grid.appendChild(card);
+  });
+}
+
+function startSession(qs, label, chapterKey){
+  session = {
+    questions: qs,
+    index: 0,
+    answers: new Array(qs.length).fill(null),
+    chapterKey: chapterKey,
+    chapterLabel: label
+  };
+  showScreen('screen-quiz');
+  renderQuestion();
+}
+
+function startQuiz(chapterKey){
+  let qs;
+  let label;
+  if(chapterKey === 'ALL'){
+    qs = DATA.questions;
+    label = 'Test complet';
+  } else {
+    qs = DATA.questions.filter(q=>q.chapter===chapterKey);
+    label = 'Thème ' + chapterKey + ' — ' + DATA.chapters[chapterKey];
+  }
+  startSession(qs, label, chapterKey);
+}
+
+function computeScore(){
+  return session.answers.filter(a=>a && a.correct===true).length;
+}
+
+function renderQuestion(){
+  const q = session.questions[session.index];
+  const existing = session.answers[session.index];
+
+  el('chapter-tag').textContent = session.chapterLabel;
+  el('progress-text').textContent = `Question ${session.index+1}/${session.questions.length}`;
+  el('progress-fill').style.width = ((session.index)/session.questions.length*100) + '%';
+  el('score-pill').textContent = computeScore() + ' ✓';
+
+  el('q-num').textContent = 'Question n°' + q.num + (q.chapter ? ' — Thème '+q.chapter : '');
+  el('q-text').textContent = q.text;
+
+  const imgWrap = el('q-images');
+  imgWrap.innerHTML = '';
+  (q.images||[]).forEach(src=>{
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = 'Illustration de la question';
+    imgWrap.appendChild(img);
+  });
+
+  const list = el('options-list');
+  list.innerHTML = '';
+  q.options.forEach(opt=>{
+    const li = document.createElement('li');
+    li.className = 'option';
+    li.dataset.letter = opt.letter;
+    li.innerHTML = `<div class="letter">${opt.letter}</div><div class="otext">${opt.text ? opt.text : '(voir image)'}</div>`;
+    li.addEventListener('click', ()=>toggleOption(li));
+    list.appendChild(li);
+  });
+
+  el('btn-prev').disabled = (session.index === 0);
+
+  if(existing && !existing.skipped){
+    session.locked = true;
+    applyLockedVisual(q, existing.selected);
+    showFeedback(q, existing.correct);
+    el('btn-skip').style.display = 'none';
+    el('btn-validate').disabled = false;
+    el('btn-validate').textContent = (session.index < session.questions.length-1) ? 'Question suivante' : 'Voir les résultats';
+    el('btn-validate').onclick = nextQuestion;
+  } else {
+    session.locked = false;
+    el('feedback').className = 'feedback';
+    el('feedback').textContent = '';
+    el('btn-validate').disabled = true;
+    el('btn-validate').textContent = 'Valider';
+    el('btn-validate').onclick = validateAnswer;
+    el('btn-skip').style.display = '';
+    el('btn-skip').textContent = (session.index < session.questions.length-1) ? 'Passer' : 'Passer et voir les résultats';
+  }
+}
+
+function applyLockedVisual(q, selectedLetters){
+  const correctSet = new Set(q.answer);
+  const selectedSet = new Set(selectedLetters);
+  document.querySelectorAll('#options-list .option').forEach(li=>{
+    const letter = li.dataset.letter;
+    li.classList.add('disabled');
+    li.classList.remove('selected');
+    if(correctSet.has(letter) && selectedSet.has(letter)){
+      li.classList.add('correct');
+    } else if(!correctSet.has(letter) && selectedSet.has(letter)){
+      li.classList.add('incorrect');
+    } else if(correctSet.has(letter) && !selectedSet.has(letter)){
+      li.classList.add('missed');
+    }
+  });
+}
+
+function showFeedback(q, isCorrect){
+  const fb = el('feedback');
+  fb.classList.add('show');
+  const answerLabel = q.answer.join(', ').toUpperCase();
+  if(isCorrect){
+    fb.className = 'feedback show ok';
+    fb.textContent = 'Exact — bonne réponse : ' + answerLabel;
+  } else {
+    fb.className = 'feedback show ko';
+    fb.textContent = 'Pas tout à fait — bonne réponse : ' + answerLabel;
+  }
+}
+
+function toggleOption(li){
+  if(session.locked) return;
+  li.classList.toggle('selected');
+  const anySelected = document.querySelectorAll('#options-list .option.selected').length > 0;
+  el('btn-validate').disabled = !anySelected;
+}
+
+function validateAnswer(){
+  const q = session.questions[session.index];
+  if(session.locked) return;
+  session.locked = true;
+  const selected = Array.from(document.querySelectorAll('#options-list .option.selected')).map(li=>li.dataset.letter);
+  const correctSet = new Set(q.answer);
+  const selectedSet = new Set(selected);
+  const isCorrect = correctSet.size === selectedSet.size && [...correctSet].every(l=>selectedSet.has(l));
+
+  session.answers[session.index] = { selected: selected, correct: isCorrect };
+
+  applyLockedVisual(q, selected);
+  showFeedback(q, isCorrect);
+
+  el('score-pill').textContent = computeScore() + ' ✓';
+  el('btn-skip').style.display = 'none';
+  el('btn-validate').disabled = false;
+  el('btn-validate').textContent = (session.index < session.questions.length-1) ? 'Question suivante' : 'Voir les résultats';
+  el('btn-validate').onclick = nextQuestion;
+}
+
+function skipQuestion(){
+  if(session.locked) return;
+  session.answers[session.index] = { selected: [], correct: null, skipped: true };
+  nextQuestion();
+}
+
+function nextQuestion(){
+  session.index++;
+  if(session.index >= session.questions.length){
+    showResults();
+  } else {
+    renderQuestion();
+  }
+}
+
+function prevQuestion(){
+  if(session.index > 0){
+    session.index--;
+    renderQuestion();
+  }
+}
+
+function chapterCompetencyTag(pct, answeredCount){
+  if(answeredCount === 0) return {cls:'non-evalue', label:'Non évalué'};
+  if(pct >= 80) return {cls:'acquis', label:'Acquis'};
+  if(pct >= 60) return {cls:'bonne-voie', label:'En bonne voie'};
+  return {cls:'consolider', label:'À consolider'};
+}
+
+function showResults(){
+  showScreen('screen-results');
+  const total = session.questions.length;
+  const score = computeScore();
+
+  const answeredIdx = session.answers.map((a,i)=>a && !a.skipped ? i : -1).filter(i=>i>=0);
+  const skippedIdx = session.answers.map((a,i)=>a && a.skipped ? i : -1).filter(i=>i>=0);
+  const wrongIdx = answeredIdx.filter(i=>!session.answers[i].correct);
+
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('fr-FR', { day:'2-digit', month:'long', year:'numeric' });
+  const timeStr = now.toLocaleTimeString('fr-FR', { hour:'2-digit', minute:'2-digit' });
+  el('res-timestamp').textContent = 'Terminé le ' + dateStr + ' à ' + timeStr;
+
+  const pct = answeredIdx.length ? Math.round(score/answeredIdx.length*100) : 0;
+  el('res-score').textContent = score;
+  el('res-total').textContent = ' / ' + answeredIdx.length + (skippedIdx.length ? ' répondues' : '');
+  let verdict;
+  if(answeredIdx.length === 0){ verdict = "Aucune question répondue."; }
+  else if(pct >= 90){ verdict = "Excellent — prêt pour l'examen !"; }
+  else if(pct >= 70){ verdict = "Bon niveau, encore un peu de révision."; }
+  else if(pct >= 50){ verdict = "Moyen — reprenez les points manqués."; }
+  else { verdict = "À retravailler avant l'examen."; }
+  el('res-verdict').textContent = verdict;
+  el('res-sub').textContent = (answeredIdx.length ? pct + '% de bonnes réponses — ' : '') + session.chapterLabel +
+    (skippedIdx.length ? ' · ' + skippedIdx.length + ' question(s) sautée(s)' : '');
+
+  // ---- compétences acquises (par chapitre, sur cette session) ----
+  const byChapter = {};
+  session.questions.forEach((q,i)=>{
+    if(!byChapter[q.chapter]) byChapter[q.chapter] = {answered:0, correct:0, total:0};
+    byChapter[q.chapter].total++;
+    const a = session.answers[i];
+    if(a && !a.skipped){
+      byChapter[q.chapter].answered++;
+      if(a.correct) byChapter[q.chapter].correct++;
+    }
+  });
+  const compList = el('competencies-list');
+  compList.innerHTML = '';
+  Object.keys(DATA.chapters).forEach(key=>{
+    const c = byChapter[key];
+    if(!c) return;
+    const pctC = c.answered ? Math.round(c.correct/c.answered*100) : 0;
+    const tag = chapterCompetencyTag(pctC, c.answered);
+    const row = document.createElement('div');
+    row.className = 'comp-row';
+    row.innerHTML = `
+      <div class="comp-row-top">
+        <span class="comp-name">${DATA.chapters[key]}</span>
+        <span class="comp-tag ${tag.cls}">${tag.label}</span>
+      </div>
+      <div class="comp-bar-track"><div class="comp-bar-fill" style="width:${pctC}%"></div></div>
+      <div class="comp-row-sub">${c.correct}/${c.answered} bonnes réponses${c.answered<c.total ? ' · '+(c.total-c.answered)+' non répondue(s)' : ''}</div>
+    `;
+    compList.appendChild(row);
+  });
+
+  // ---- questions sautées ----
+  const skippedWrap = el('skipped-list');
+  skippedWrap.innerHTML = '';
+  if(skippedIdx.length){
+    const h = document.createElement('h3');
+    h.textContent = 'Questions sautées (' + skippedIdx.length + ')';
+    skippedWrap.appendChild(h);
+    skippedIdx.forEach(i=>{
+      const q = session.questions[i];
+      const d = document.createElement('div');
+      d.className = 'missed-item skip';
+      d.innerHTML = `<span class="mnum">n°${q.num}</span><span>${q.text}</span>`;
+      skippedWrap.appendChild(d);
+    });
+    const resumeBtn = document.createElement('button');
+    resumeBtn.className = 'btn btn-primary';
+    resumeBtn.style.marginTop = '12px';
+    resumeBtn.textContent = 'Répondre aux questions sautées';
+    resumeBtn.onclick = ()=>{
+      const qs = skippedIdx.map(i=>session.questions[i]);
+      startSession(qs, 'Questions sautées', null);
+    };
+    skippedWrap.appendChild(resumeBtn);
+  }
+
+  // ---- questions incorrectes ----
+  const missedWrap = el('missed-list');
+  missedWrap.innerHTML = '';
+  if(wrongIdx.length){
+    const h = document.createElement('h3');
+    h.textContent = 'Questions à revoir (' + wrongIdx.length + ')';
+    missedWrap.appendChild(h);
+    wrongIdx.forEach(i=>{
+      const q = session.questions[i];
+      const d = document.createElement('div');
+      d.className = 'missed-item';
+      d.innerHTML = `<span class="mnum">n°${q.num}</span><span>${q.text} — Réponse : ${q.answer.join(', ').toUpperCase()}</span>`;
+      missedWrap.appendChild(d);
+    });
+  }
+
+  el('btn-retry').onclick = ()=>startSession(session.questions, session.chapterLabel, session.chapterKey);
+}
+
+el('btn-home').addEventListener('click', ()=>showScreen('screen-home'));
+el('btn-home2').addEventListener('click', ()=>showScreen('screen-home'));
+el('btn-home3').addEventListener('click', ()=>showScreen('screen-home'));
+el('btn-skip').addEventListener('click', skipQuestion);
+el('btn-prev').addEventListener('click', prevQuestion);
+
+// ================= AUTHENTIFICATION PAR CODE OTP (e-mail) =================
+// URL du service d'authentification (Google Apps Script, voir le guide) :
+const AUTH_URL = 'https://script.google.com/macros/s/AKfycbw0H5TtDbNsFBdlsNpXF-2e0GLlmWwOrsqtwJMzkovIyLUAGWn-KND7pD5s2zfqe2qmqw/exec';
+const VALIDATOR_EMAIL = 'kgbgroup6@gmail.com';
+const SESSION_KEY = 'permisb229_session';
+let authEmail = '';
+
+// ---- Utilisation hors ligne : copie locale des questions (IndexedDB), valable OFFLINE_MAX_DAYS jours sans reconnexion ----
+const OFFLINE_MAX_DAYS = 30;
+const DB_NAME = 'permisb229_offline', DB_STORE = 'kv', DB_KEY = 'data';
+function idbOpen(){
+  return new Promise((res,rej)=>{
+    if(!window.indexedDB) return rej(new Error('noidb'));
+    const r = indexedDB.open(DB_NAME,1);
+    r.onupgradeneeded = ()=>r.result.createObjectStore(DB_STORE);
+    r.onsuccess = ()=>res(r.result);
+    r.onerror = ()=>rej(r.error);
+  });
+}
+async function idbGet(){
+  try{
+    const db = await idbOpen();
+    return await new Promise((res,rej)=>{
+      const q = db.transaction(DB_STORE).objectStore(DB_STORE).get(DB_KEY);
+      q.onsuccess = ()=>res(q.result||null);
+      q.onerror = ()=>rej(q.error);
+    });
+  }catch(e){ return null; }
+}
+async function idbSet(v){
+  try{
+    const db = await idbOpen();
+    await new Promise((res,rej)=>{
+      const tx = db.transaction(DB_STORE,'readwrite');
+      tx.objectStore(DB_STORE).put(v,DB_KEY);
+      tx.oncomplete = res; tx.onerror = ()=>rej(tx.error);
+    });
+    try{ if(navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
+    return true;
+  }catch(e){ return false; }
+}
+async function idbDel(){
+  try{
+    const db = await idbOpen();
+    await new Promise((res,rej)=>{
+      const tx = db.transaction(DB_STORE,'readwrite');
+      tx.objectStore(DB_STORE).delete(DB_KEY);
+      tx.oncomplete = res; tx.onerror = ()=>rej(tx.error);
+    });
+  }catch(e){}
+}
+
+function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function lsDel(k){ try{ localStorage.removeItem(k); }catch(e){} }
+function authMsg(t,cls){ const m=el('auth-msg'); m.textContent=t||''; m.className='auth-msg '+(cls||''); }
+function unlock(){
+  document.body.classList.remove('locked');
+  if(!el('btn-logout')){
+    const b=document.createElement('button'); b.id='btn-logout'; b.className='logout-btn'; b.textContent='Déconnexion';
+    b.onclick=async()=>{ lsDel(SESSION_KEY); await idbDel(); location.reload(); };
+    const mh=document.querySelector('.masthead'); if(mh) mh.appendChild(b);
+  }
+}
+async function authCall(params, ms){
+  if(!AUTH_URL) throw new Error('Service d’authentification non configuré.');
+  const ctl = new AbortController();
+  const timer = setTimeout(()=>ctl.abort(), ms || 20000);
+  try{
+    const r = await fetch(AUTH_URL + '?' + new URLSearchParams(params).toString(), {signal: ctl.signal});
+    return await r.json();
+  } finally { clearTimeout(timer); }
+}
+async function fetchData(tok){
+  const res = await authCall({action:'data', token:tok}, 90000);
+  if(res.status!=='ok' || !res.data){
+    if(res.code==='session') throw new Error('SESSION');
+    throw new Error(res.message||'Impossible de charger les questions.');
+  }
+  const rec = {v:res.v||0, data:res.data, savedAt:Date.now(), checkedAt:Date.now()};
+  await idbSet(rec);
+  return rec;
+}
+async function loadData(tok){
+  const rec = await fetchData(tok);
+  DATA = rec.data;
+  buildHome();
+  unlock();
+}
+function startFromCache(rec){
+  DATA = rec.data;
+  buildHome();
+  unlock();
+}
+// Vérifie en arrière-plan (si Internet est disponible) que l'accès est toujours valide et que les questions sont à jour.
+async function backgroundCheck(tok, rec){
+  try{
+    const res = await authCall({action:'check', token:tok}, 20000);
+    if(res.status==='ok'){
+      rec.checkedAt = Date.now();
+      if(res.v && res.v!==rec.v){ try{ await fetchData(tok); }catch(e){ await idbSet(rec); } }
+      else await idbSet(rec);
+    } else if(res.code==='session'){
+      lsDel(SESSION_KEY); await idbDel(); location.reload();
+    }
+  }catch(e){ /* hors ligne : on continue avec la copie locale */ }
+}
+async function authSend(){
+  const email = el('auth-email').value.trim().toLowerCase();
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ authMsg('Adresse e-mail invalide.','err'); return; }
+  authMsg('Envoi en cours…'); el('auth-send').disabled=true;
+  try{
+    const res = await authCall({action:'request', email});
+    if(res.status==='otp_sent'){
+      authEmail = email;
+      el('auth-step-email').style.display='none'; el('auth-step-code').style.display='';
+      el('auth-code-info').textContent='Un code à 6 chiffres a été envoyé à '+email+' (valable 10 minutes).';
+      authMsg('');
+      el('auth-code').focus();
+    } else if(res.status==='pending'){
+      authMsg('Votre demande d’accès a été transmise au validateur. Vous recevrez un e-mail dès qu’elle sera approuvée, puis vous pourrez demander votre code.','ok');
+    } else if(res.status==='rejected'){
+      authMsg('Accès refusé pour cette adresse.','err');
+    } else { authMsg(res.message||'Erreur, réessayez.','err'); }
+  }catch(e){ authMsg(e.message||'Connexion impossible.','err'); }
+  el('auth-send').disabled=false;
+}
+async function authVerify(){
+  const code = el('auth-code').value.trim();
+  if(!/^\d{6}$/.test(code)){ authMsg('Entrez les 6 chiffres du code.','err'); return; }
+  authMsg('Vérification…'); el('auth-verify').disabled=true;
+  try{
+    const res = await authCall({action:'verify', email:authEmail, code});
+    if(res.status==='ok' && res.token){
+      lsSet(SESSION_KEY, res.token);
+      authMsg('Chargement des questions…','ok');
+      try{ await loadData(res.token); }
+      catch(e2){ authMsg(e2.message==='SESSION' ? 'Session invalide, reconnectez-vous.' : (e2.message||'Impossible de charger les questions.'),'err'); }
+    } else authMsg(res.message||'Code incorrect.','err');
+  }catch(e){ authMsg(e.message||'Connexion impossible.','err'); }
+  el('auth-verify').disabled=false;
+}
+async function authInit(){
+  el('auth-send').onclick=authSend;
+  el('auth-verify').onclick=authVerify;
+  el('auth-resend').onclick=()=>{ el('auth-email').value=authEmail; el('auth-step-code').style.display='none'; el('auth-step-email').style.display=''; authSend(); };
+  el('auth-back').onclick=()=>{ el('auth-step-code').style.display='none'; el('auth-step-email').style.display=''; authMsg(''); };
+  el('auth-email').addEventListener('keydown',e=>{ if(e.key==='Enter') authSend(); });
+  el('auth-code').addEventListener('keydown',e=>{ if(e.key==='Enter') authVerify(); });
+  const tok = lsGet(SESSION_KEY);
+  if(tok && AUTH_URL){
+    const rec = await idbGet();
+    const fresh = rec && rec.data && (Date.now() - (rec.checkedAt||0)) < OFFLINE_MAX_DAYS*86400000;
+    if(fresh){ startFromCache(rec); backgroundCheck(tok, rec); return; }
+    authMsg('Chargement des questions…','ok');
+    try{
+      await loadData(tok);
+      return;
+    }catch(e){
+      if(e.message==='SESSION'){ lsDel(SESSION_KEY); await idbDel(); authMsg(''); }
+      else {
+        authMsg(rec ? 'Reconnexion requise : connectez-vous à Internet pour renouveler votre accès (plus de '+OFFLINE_MAX_DAYS+' jours sans vérification).' : 'Impossible de charger les questions. Vérifiez votre connexion puis actualisez la page.','err');
+        return;
+      }
+    }
+  }
+  if(!AUTH_URL) authMsg('Service d’authentification non configuré : renseignez AUTH_URL dans le fichier.','err');
+}
+authInit();
+
+// Installation hors ligne : le service worker garde l'application en mémoire sur l'appareil.
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=>{ navigator.serviceWorker.register('sw.js').catch(()=>{}); });
+}
+</script>
+</body>
+</html>
