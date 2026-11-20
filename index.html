@@ -401,6 +401,56 @@
   .auth-msg.err{color:var(--red);} .auth-msg.ok{color:#1e7b4d;}
   .auth-link{background:none;border:0;color:var(--blue);text-decoration:underline;font-size:13.5px;margin-top:10px;cursor:pointer;padding:0;}
   .logout-btn{background:none;border:1px solid rgba(255,255,255,.6);color:inherit;border-radius:8px;font-size:12px;padding:4px 9px;margin-left:8px;cursor:pointer;}
+  /* ===== Recherche par mot-clé ===== */
+  .search-open{display:flex;align-items:center;gap:10px;width:100%;margin:0 0 22px;padding:14px 16px;border:2px solid #3a3f44;border-radius:var(--radius);background:rgba(255,255,255,.04);color:inherit;font:inherit;font-size:15px;font-weight:600;cursor:pointer;text-align:left;}
+  .search-open:hover{border-color:var(--red);}
+  .search-open .si{font-size:18px;} .search-open small{margin-left:auto;font-weight:400;opacity:.65;font-size:12px;}
+  .sr-card{text-align:left;}
+  .sr-bar{display:flex;gap:8px;align-items:center;}
+  .sr-bar input{flex:1;min-width:0;padding:12px;border:2px solid var(--paper-dim);border-radius:var(--radius);font-size:16px;background:#fff;color:var(--ink);}
+  .sr-bar input:focus{outline:none;border-color:var(--blue);}
+  .sr-clear{border:0;background:var(--paper-dim);color:var(--ink);border-radius:var(--radius);width:42px;height:42px;font-size:18px;cursor:pointer;}
+  .sr-filter select{width:100%;margin-top:8px;padding:10px;border-radius:var(--radius);border:2px solid var(--paper-dim);font-size:14px;background:#fff;color:var(--ink);}
+  .sr-count{font-size:12.5px;color:var(--ink-muted);margin:10px 0 4px;}
+  .sr-actions{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 4px;}
+  .sr-empty{padding:18px 0;color:var(--ink-muted);font-size:14px;}
+  mark.hl{background:#ffe27a;color:inherit;padding:0 1px;border-radius:2px;}
+  /* ===== Taux de réussite, corrigé et questions à revoir ===== */
+  .rate-box{display:inline-block;margin:14px 0 4px;padding:12px 24px;border-radius:var(--radius);background:var(--paper-dim);}
+  .rate-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-muted);font-weight:700;}
+  .rate-val{font-family:var(--display);font-size:42px;font-weight:800;line-height:1.1;}
+  .rate-val.good{color:var(--green);} .rate-val.mid{color:#b57f00;} .rate-val.low{color:var(--red);}
+  .rate-note{font-size:12.5px;color:var(--ink-muted);margin-top:2px;max-width:340px;}
+  .missed-item.detail{gap:10px;padding:12px 0;}
+  .mbody{flex:1;min-width:0;} .mq{font-weight:600;margin-bottom:6px;}
+  .mbody img,.all-q img{max-width:100%;max-height:170px;border-radius:4px;margin:4px 6px 4px 0;}
+  .mmine{color:var(--red);font-size:12.5px;margin-bottom:4px;}
+  .mans{font-size:12.5px;font-weight:700;color:var(--green-dark);margin:6px 0 3px;}
+  .ans-row{display:flex;gap:8px;align-items:flex-start;margin:3px 0;}
+  .ans-letter{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;font-size:12.5px;display:inline-flex;align-items:center;justify-content:center;}
+  .retry-wrong{margin-top:12px;}
+  .all-card-body{text-align:left;}
+  .all-filter select{width:100%;padding:10px;border-radius:var(--radius);border:2px solid var(--paper-dim);font-size:14px;background:#fff;color:var(--ink);}
+  .all-count{font-size:12.5px;color:var(--ink-muted);margin:8px 0 4px;}
+  .all-q{border-bottom:1px solid var(--paper-dim);padding:14px 0;}
+  .all-q-head{color:var(--red);font-weight:800;font-size:12.5px;}
+  .all-q-text{margin:4px 0 6px;font-weight:600;font-size:14.5px;}
+  .all-opts{list-style:none;padding:0;margin:8px 0;}
+  .all-opts li{display:flex;gap:8px;padding:5px 6px;align-items:flex-start;font-size:13.5px;border-radius:4px;}
+  .all-opts li .ans-letter{background:#c9ccc6;color:var(--ink);}
+  .all-opts li.ok{background:#e4f1ea;} .all-opts li.ok .ans-letter{background:var(--green);color:#fff;}
+  .all-ans{font-size:12.5px;color:var(--green-dark);}
+  .auth-card .auth-consent{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.4;color:#555;margin:0 0 12px;}
+  .auth-card .auth-consent input{width:auto;margin:2px 0 0;flex-shrink:0;}
+  .profile-hint{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff3d6;color:#5c4300;border:1px solid #e6b94d;border-radius:var(--radius);padding:10px 14px;margin:0 0 16px;font-size:14px;}
+  .fb-stars{display:flex;gap:6px;margin:8px 0 12px;}
+  .fb-star{border:0;background:none;font-size:36px;line-height:1;cursor:pointer;color:#c9ccc6;padding:0 2px;}
+  .fb-star.on{color:#e6a700;}
+  #fb-comment{width:100%;box-sizing:border-box;padding:12px;border:2px solid var(--paper-dim);border-radius:var(--radius);font-size:16px;font-family:inherit;margin-bottom:8px;}
+  .pf-field{width:100%;box-sizing:border-box;padding:12px;border:2px solid var(--paper-dim);border-radius:var(--radius);font-size:16px;margin-bottom:10px;}
+  .pf-consent{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--ink-muted);margin:4px 0 10px;}
+  .fb-msg,.pf-msg{min-height:20px;font-size:13.5px;margin:2px 0 10px;}
+  .fb-msg.err,.pf-msg.err{color:var(--red);} .fb-msg.ok,.pf-msg.ok{color:var(--green);}
 </style>
 </head>
 <body class="locked">
@@ -411,6 +461,15 @@
       <p>Accès réservé. Saisissez votre adresse e-mail : un code de connexion à 6 chiffres vous y sera envoyé.</p>
       <input id="auth-email" type="email" inputmode="email" autocomplete="email" placeholder="votre@email.com">
       <button class="btn btn-primary" id="auth-send" style="width:100%">Recevoir le code</button>
+    </div>
+    <div id="auth-step-info" style="display:none">
+      <h2>Votre inscription</h2>
+      <p>Pour valider votre accès, renseignez ces informations. Elles servent uniquement à gérer l’accès et à vous contacter.</p>
+      <input id="auth-wa" type="tel" inputmode="tel" autocomplete="tel" placeholder="Numéro WhatsApp (ex. +229 01 96 91 67 18)">
+      <input id="auth-ref" type="text" maxlength="100" placeholder="Qui vous a recommandé l’application ? (nom ou numéro)">
+      <label class="auth-consent"><input id="auth-consent" type="checkbox"><span>J’accepte que mon numéro WhatsApp et mon avis soient utilisés pour la gestion de l’accès et l’amélioration de l’application.</span></label>
+      <button class="btn btn-primary" id="auth-info-send" style="width:100%">Envoyer ma demande</button>
+      <button class="auth-link" id="auth-info-back">Retour</button>
     </div>
     <div id="auth-step-code" style="display:none">
       <h2>Code de vérification</h2>
@@ -436,7 +495,13 @@
       <p>Choisissez un thème pour vous entraîner, ou lancez le test complet. Certaines questions ont plusieurs bonnes réponses : cochez-les toutes avant de valider. Après chaque question, vous voyez immédiatement la ou les bonnes réponses.</p>
     </div>
 
+    <div class="profile-hint" id="profile-hint" style="display:none"><span>Complétez votre profil (numéro WhatsApp).</span><button class="btn btn-ghost" id="btn-profile-open" type="button">Compléter</button></div>
+
+    <button class="search-open" id="btn-search-open" type="button"><span class="si">🔍</span><span>Rechercher un mot-clé</span><small>ex. stop, alcool, ceinture…</small></button>
+
     <div class="chapter-grid" id="chapter-grid"></div>
+
+    <button class="search-open" id="btn-feedback-open" type="button" style="margin-top:22px"><span class="si">⭐</span><span>Donner mon avis</span><small>votre avis nous aide</small></button>
 
     <div class="install-hint" id="install-hint">
       <div class="install-hint-title">Installer comme application</div>
@@ -484,11 +549,14 @@
     <div class="results-card">
       <div class="res-timestamp" id="res-timestamp"></div>
       <div class="big-score"><span id="res-score"></span><span id="res-total"></span></div>
+      <div class="rate-box"><div class="rate-label">Taux de réussite</div><div class="rate-val" id="res-rate-val"></div><div class="rate-note" id="res-rate-note"></div></div>
       <div class="verdict" id="res-verdict"></div>
       <div class="sub" id="res-sub"></div>
       <div class="results-actions">
         <button class="btn btn-primary" id="btn-retry">Recommencer ce thème</button>
         <button class="btn btn-ghost" id="btn-home3">Autre thème</button>
+        <button class="btn btn-ghost" id="btn-all-res">Toutes les réponses</button>
+        <button class="btn btn-ghost" id="btn-fb-res">Donner mon avis</button>
       </div>
 
       <div class="competencies" id="competencies-wrap">
@@ -498,6 +566,56 @@
 
       <div class="missed-list" id="skipped-list"></div>
       <div class="missed-list" id="missed-list"></div>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-all">
+    <div class="quiz-top">
+      <button class="back-link" id="btn-home4">&larr; Thèmes</button>
+    </div>
+    <div class="results-card all-card-body">
+      <h2 style="margin:0 0 6px">Toutes les questions et bonnes réponses</h2>
+      <div class="all-filter"><select id="all-filter" aria-label="Filtrer par thème"></select></div>
+      <div class="all-count" id="all-count"></div>
+      <div id="all-list"></div>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-feedback">
+    <div class="quiz-top"><button class="back-link" id="btn-home-fb">&larr; Thèmes</button></div>
+    <div class="results-card sr-card">
+      <h2 style="margin:0 0 6px">Votre avis</h2>
+      <p style="margin:0 0 6px;font-size:14px;color:var(--ink-muted)">Notez l’application et dites-nous ce qui peut être amélioré.</p>
+      <div class="fb-stars" id="fb-stars" aria-label="Note de 1 à 5"></div>
+      <textarea id="fb-comment" maxlength="500" rows="5" placeholder="Votre commentaire (facultatif)"></textarea>
+      <div class="fb-msg" id="fb-msg"></div>
+      <button class="btn btn-primary" id="fb-send">Envoyer mon avis</button>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-profile">
+    <div class="quiz-top"><button class="back-link" id="btn-home-pf">&larr; Thèmes</button></div>
+    <div class="results-card sr-card">
+      <h2 style="margin:0 0 6px">Mon profil</h2>
+      <p style="margin:0 0 10px;font-size:14px;color:var(--ink-muted)">Ces informations servent uniquement à gérer votre accès et à vous contacter.</p>
+      <input class="pf-field" id="pf-wa" type="tel" inputmode="tel" autocomplete="tel" placeholder="Numéro WhatsApp (ex. +229 01 96 91 67 18)">
+      <input class="pf-field" id="pf-ref" type="text" maxlength="100" placeholder="Qui vous a recommandé l’application ? (nom ou numéro)">
+      <label class="pf-consent"><input id="pf-consent" type="checkbox"><span>J’accepte que mon numéro WhatsApp et mon avis soient utilisés pour la gestion de l’accès et l’amélioration de l’application.</span></label>
+      <div class="pf-msg" id="pf-msg"></div>
+      <button class="btn btn-primary" id="pf-send">Enregistrer</button>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-search">
+    <div class="quiz-top"><button class="back-link" id="btn-home-search">&larr; Thèmes</button></div>
+    <div class="results-card sr-card">
+      <h2 style="margin:0 0 10px">Recherche par mot-clé</h2>
+      <div class="sr-bar"><input id="sr-input" type="search" placeholder="Mot-clé : stop, alcool, ceinture… ou n° de question" autocomplete="off" enterkeyhint="search"><button class="sr-clear" id="sr-clear" type="button" aria-label="Effacer">✕</button></div>
+      <div class="sr-filter"><select id="sr-theme" aria-label="Filtrer par thème"></select></div>
+      <div class="sr-count" id="sr-count"></div>
+      <div class="sr-actions"><button class="btn btn-primary" id="sr-train" style="display:none">S’entraîner sur ces résultats</button></div>
+      <div id="sr-list"></div>
+      <button class="btn btn-ghost" id="sr-more" style="display:none;margin-top:12px">Afficher plus de résultats</button>
     </div>
   </section>
 
@@ -546,6 +664,15 @@ function buildHome(){
     card.addEventListener('click', ()=>startQuiz(key));
     grid.appendChild(card);
   });
+
+  const ansCard = document.createElement('button');
+  ansCard.className = 'chapter-card';
+  ansCard.style.borderLeftColor = '#1e7b4d';
+  ansCard.innerHTML = `<div class="roman">CORRIGÉ</div>
+    <div class="title">Toutes les questions et bonnes réponses</div>
+    <div class="meta">Consulter les ${DATA.questions.length} questions avec les bons choix</div>`;
+  ansCard.addEventListener('click', ()=>showAllAnswers());
+  grid.appendChild(ansCard);
 }
 
 function startSession(qs, label, chapterKey){
@@ -732,9 +859,9 @@ function showResults(){
   const timeStr = now.toLocaleTimeString('fr-FR', { hour:'2-digit', minute:'2-digit' });
   el('res-timestamp').textContent = 'Terminé le ' + dateStr + ' à ' + timeStr;
 
-  const pct = answeredIdx.length ? Math.round(score/answeredIdx.length*100) : 0;
+  const pct = total ? Math.round(score/total*100) : 0;
   el('res-score').textContent = score;
-  el('res-total').textContent = ' / ' + answeredIdx.length + (skippedIdx.length ? ' répondues' : '');
+  el('res-total').textContent = ' / ' + total;
   let verdict;
   if(answeredIdx.length === 0){ verdict = "Aucune question répondue."; }
   else if(pct >= 90){ verdict = "Excellent — prêt pour l'examen !"; }
@@ -742,7 +869,12 @@ function showResults(){
   else if(pct >= 50){ verdict = "Moyen — reprenez les points manqués."; }
   else { verdict = "À retravailler avant l'examen."; }
   el('res-verdict').textContent = verdict;
-  el('res-sub').textContent = (answeredIdx.length ? pct + '% de bonnes réponses — ' : '') + session.chapterLabel +
+  const rv = el('res-rate-val');
+  rv.textContent = pct + ' %';
+  rv.className = 'rate-val ' + (pct >= 70 ? 'good' : pct >= 50 ? 'mid' : 'low');
+  el('res-rate-note').textContent = score + ' bonne' + (score>1?'s':'') + ' réponse' + (score>1?'s':'') + ' sur ' + total +
+    ' question' + (total>1?'s':'') + ' · 1 point par question réussie (tous les bons choix cochés comptent pour 1 seul point)';
+  el('res-sub').textContent = session.chapterLabel +
     (skippedIdx.length ? ' · ' + skippedIdx.length + ' question(s) sautée(s)' : '');
 
   // ---- compétences acquises (par chapitre, sur cette session) ----
@@ -811,10 +943,17 @@ function showResults(){
     wrongIdx.forEach(i=>{
       const q = session.questions[i];
       const d = document.createElement('div');
-      d.className = 'missed-item';
-      d.innerHTML = `<span class="mnum">n°${q.num}</span><span>${q.text} — Réponse : ${q.answer.join(', ').toUpperCase()}</span>`;
+      d.className = 'missed-item detail';
+      d.innerHTML = `<span class="mnum">n°${q.num}</span><div class="mbody"><div class="mq">${esc(q.text)}</div>${imgsHTML(q)}` +
+        `<div class="mmine">Votre réponse : ${lettersTxt(session.answers[i].selected)}</div>` +
+        `<div class="mans">Bonne${q.answer.length>1?'s':''} réponse${q.answer.length>1?'s':''} :</div>${answerRowsHTML(q)}</div>`;
       missedWrap.appendChild(d);
     });
+    const wrongBtn = document.createElement('button');
+    wrongBtn.className = 'btn btn-primary retry-wrong';
+    wrongBtn.textContent = 'Reprendre uniquement les mauvaises réponses (' + wrongIdx.length + ')';
+    wrongBtn.onclick = ()=>startSession(wrongIdx.map(i=>session.questions[i]), 'Mauvaises réponses à reprendre', null);
+    missedWrap.appendChild(wrongBtn);
   }
 
   el('btn-retry').onclick = ()=>startSession(session.questions, session.chapterLabel, session.chapterKey);
@@ -826,8 +965,168 @@ el('btn-home3').addEventListener('click', ()=>showScreen('screen-home'));
 el('btn-skip').addEventListener('click', skipQuestion);
 el('btn-prev').addEventListener('click', prevQuestion);
 
+// ===== Recherche par mot-clé (fonctionne aussi hors ligne : les questions sont déjà sur l'appareil) =====
+function esc(t){ return String(t==null?'':t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function lettersTxt(arr){ return (arr && arr.length) ? arr.map(l=>l.toUpperCase()).join(', ') : 'aucune'; }
+function imgsHTML(q){ return (q.images||[]).map(src=>`<img src="${src}" alt="Illustration de la question" loading="lazy">`).join(''); }
+function answerRowsHTML(q){
+  return q.answer.map(l=>{
+    const o = q.options.find(x=>x.letter===l);
+    return `<div class="ans-row"><span class="ans-letter">${l.toUpperCase()}</span><span>${o && o.text ? esc(o.text) : '(voir image)'}</span></div>`;
+  }).join('');
+}
+function renderAllAnswers(ch){
+  const qs = DATA.questions.filter(q=>!ch || q.chapter===ch);
+  el('all-count').textContent = qs.length + ' question' + (qs.length>1?'s':'');
+  el('all-list').innerHTML = qs.map(q=>{
+    const ok = new Set(q.answer);
+    return `<div class="all-q"><div class="all-q-head">Question n°${q.num} — Thème ${esc(q.chapter)}</div>` +
+      `<p class="all-q-text">${esc(q.text)}</p>${imgsHTML(q)}` +
+      `<ul class="all-opts">${q.options.map(o=>`<li class="${ok.has(o.letter)?'ok':''}"><span class="ans-letter">${esc(o.letter).toUpperCase()}</span><span>${o.text ? esc(o.text) : '(voir image)'}</span></li>`).join('')}</ul>` +
+      `<div class="all-ans">Bonne${q.answer.length>1?'s':''} réponse${q.answer.length>1?'s':''} : <strong>${lettersTxt(q.answer)}</strong></div></div>`;
+  }).join('');
+}
+function showAllAnswers(){
+  const sel = el('all-filter');
+  if(!sel.dataset.ready){
+    sel.innerHTML = '<option value="">Tous les thèmes (' + DATA.questions.length + ')</option>' +
+      Object.keys(DATA.chapters).map(k=>`<option value="${k}">Thème ${k} — ${esc(DATA.chapters[k])}</option>`).join('');
+    sel.addEventListener('change', ()=>renderAllAnswers(sel.value));
+    sel.dataset.ready = '1';
+  }
+  renderAllAnswers(sel.value);
+  showScreen('screen-all');
+}
+el('btn-all-res').addEventListener('click', ()=>showAllAnswers());
+el('btn-home4').addEventListener('click', ()=>showScreen('screen-home'));
+
+const SR_PAGE = 40;
+let srResults = [], srShown = 0, srTimer = null, srTerms = [];
+function srFold(t){
+  return Array.from(String(t == null ? '' : t)).map(ch=>{
+    const b = ch.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+    return b.length === 1 ? b : ch.toLowerCase().length === 1 ? ch.toLowerCase() : ch;
+  }).join('');
+}
+function srHL(text){
+  const t = String(text == null ? '' : text);
+  if(!srTerms.length) return esc(t);
+  const f = srFold(t); const spans = [];
+  srTerms.forEach(w=>{ let i = f.indexOf(w); while(i !== -1){ spans.push([i, i + w.length]); i = f.indexOf(w, i + w.length); } });
+  if(!spans.length) return esc(t);
+  spans.sort((a,b)=>a[0]-b[0]);
+  const merged = [spans[0].slice()];
+  for(let k = 1; k < spans.length; k++){ const last = merged[merged.length-1]; if(spans[k][0] <= last[1]) last[1] = Math.max(last[1], spans[k][1]); else merged.push(spans[k].slice()); }
+  let out = '', pos = 0;
+  merged.forEach(([a,b])=>{ out += esc(t.slice(pos, a)) + '<mark class="hl">' + esc(t.slice(a, b)) + '</mark>'; pos = b; });
+  return out + esc(t.slice(pos));
+}
+function srRun(){
+  const raw = el('sr-input').value.trim();
+  const theme = el('sr-theme').value;
+  srTerms = srFold(raw).split(/\s+/).filter(Boolean);
+  if(!srTerms.length){
+    srResults = []; el('sr-list').innerHTML = '<div class="sr-empty">Saisissez un ou plusieurs mots-clés. Tous les mots doivent figurer dans la question ou ses réponses. Vous pouvez aussi saisir un numéro de question.</div>';
+    el('sr-count').textContent = ''; el('sr-train').style.display = 'none'; el('sr-more').style.display = 'none'; return;
+  }
+  const isNum = /^\d+$/.test(raw);
+  srResults = DATA.questions.filter(q=>{
+    if(theme && q.chapter !== theme) return false;
+    if(isNum && String(q.num) === raw) return true;
+    const all = srFold(q.text) + ' ' + q.options.map(o=>srFold(o.text)).join(' ');
+    return srTerms.every(w=>all.indexOf(w) !== -1);
+  });
+  srResults.sort((a,b)=>{
+    if(isNum){ const ea = String(a.num) === raw ? 0 : 1, eb = String(b.num) === raw ? 0 : 1; if(ea !== eb) return ea - eb; }
+    const sa = srTerms.every(w=>srFold(a.text).indexOf(w) !== -1) ? 0 : 1;
+    const sb = srTerms.every(w=>srFold(b.text).indexOf(w) !== -1) ? 0 : 1;
+    return sa - sb || a.num - b.num;
+  });
+  srShown = 0; el('sr-list').innerHTML = '';
+  el('sr-count').textContent = srResults.length + ' résultat' + (srResults.length > 1 ? 's' : '') + ' pour « ' + raw + ' »';
+  el('sr-train').style.display = srResults.length ? '' : 'none';
+  if(!srResults.length){ el('sr-list').innerHTML = '<div class="sr-empty">Aucune question ne correspond. Essayez un seul mot, ou sans accent.</div>'; el('sr-more').style.display = 'none'; return; }
+  srMore();
+}
+function srMore(){
+  const ok = srResults.slice(srShown, srShown + SR_PAGE);
+  el('sr-list').insertAdjacentHTML('beforeend', ok.map(q=>{
+    const good = new Set(q.answer);
+    return `<div class="all-q"><div class="all-q-head">Question n°${q.num} — Thème ${esc(q.chapter)}</div>` +
+      `<p class="all-q-text">${srHL(q.text)}</p>${imgsHTML(q)}` +
+      `<ul class="all-opts">${q.options.map(o=>`<li class="${good.has(o.letter)?'ok':''}"><span class="ans-letter">${esc(o.letter).toUpperCase()}</span><span>${o.text ? srHL(o.text) : '(voir image)'}</span></li>`).join('')}</ul>` +
+      `<div class="all-ans">Bonne${q.answer.length>1?'s':''} réponse${q.answer.length>1?'s':''} : <strong>${lettersTxt(q.answer)}</strong></div></div>`;
+  }).join(''));
+  srShown += ok.length;
+  el('sr-more').style.display = srShown < srResults.length ? '' : 'none';
+  if(srShown < srResults.length) el('sr-more').textContent = 'Afficher plus de résultats (' + (srResults.length - srShown) + ' restants)';
+}
+function showSearch(){
+  const sel = el('sr-theme');
+  if(!sel.dataset.ready){
+    sel.innerHTML = '<option value="">Tous les thèmes</option>' + Object.keys(DATA.chapters).map(k=>`<option value="${k}">Thème ${k} — ${esc(DATA.chapters[k])}</option>`).join('');
+    el('sr-input').addEventListener('input', ()=>{ clearTimeout(srTimer); srTimer = setTimeout(srRun, 180); });
+    el('sr-input').addEventListener('keydown', e=>{ if(e.key === 'Enter'){ clearTimeout(srTimer); srRun(); e.target.blur(); } });
+    sel.addEventListener('change', srRun);
+    el('sr-clear').addEventListener('click', ()=>{ el('sr-input').value = ''; srRun(); el('sr-input').focus(); });
+    el('sr-more').addEventListener('click', srMore);
+    el('sr-train').addEventListener('click', ()=>startSession(srResults.slice(), 'Recherche : « ' + el('sr-input').value.trim() + ' »', null));
+    sel.dataset.ready = '1';
+  }
+  showScreen('screen-search'); srRun();
+  setTimeout(()=>el('sr-input').focus(), 50);
+}
+el('btn-search-open').addEventListener('click', showSearch);
+el('btn-home-search').addEventListener('click', ()=>showScreen('screen-home'));
+
+// ===== Avis et profil =====
+let fbRating = 0;
+function setMsg(id, txt, cls){ const m = el(id); m.textContent = txt || ''; m.className = (id === 'fb-msg' ? 'fb-msg ' : 'pf-msg ') + (cls || ''); }
+function fbRender(){
+  const box = el('fb-stars'); box.innerHTML = '';
+  for(let i = 1; i <= 5; i++){
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'fb-star' + (i <= fbRating ? ' on' : ''); b.textContent = '★';
+    b.setAttribute('aria-label', i + ' sur 5');
+    b.onclick = ()=>{ fbRating = i; fbRender(); };
+    box.appendChild(b);
+  }
+}
+function showFeedback(){ fbRating = 0; el('fb-comment').value = ''; setMsg('fb-msg',''); fbRender(); showScreen('screen-feedback'); }
+async function sendFeedback(){
+  if(!fbRating){ setMsg('fb-msg','Choisissez une note de 1 à 5 étoiles.','err'); return; }
+  setMsg('fb-msg','Envoi en cours…'); el('fb-send').disabled = true;
+  try{
+    const res = await authCall({action:'feedback', token: lsGet(SESSION_KEY) || '', rating: fbRating, comment: el('fb-comment').value.trim()});
+    if(res.status === 'ok'){ setMsg('fb-msg','Merci pour votre avis !','ok'); el('fb-comment').value = ''; fbRating = 0; fbRender(); }
+    else setMsg('fb-msg', res.code === 'session' ? 'Session expirée : cliquez sur Déconnexion puis reconnectez-vous.' : (res.message || 'Envoi impossible.'), 'err');
+  }catch(e){ setMsg('fb-msg','Connexion requise pour envoyer votre avis. Réessayez quand Internet est disponible.','err'); }
+  el('fb-send').disabled = false;
+}
+function setProfileHint(need){ lsSet('permisb229_np', need ? '1' : '0'); el('profile-hint').style.display = need ? '' : 'none'; }
+function showProfile(){ setMsg('pf-msg',''); showScreen('screen-profile'); }
+async function sendProfile(){
+  const wa = el('pf-wa').value.trim(), ref = el('pf-ref').value.trim();
+  if(!wa || !ref || !el('pf-consent').checked){ setMsg('pf-msg','Renseignez votre numéro WhatsApp, la personne qui vous a recommandé l’application, et cochez la case d’accord.','err'); return; }
+  setMsg('pf-msg','Enregistrement…'); el('pf-send').disabled = true;
+  try{
+    const res = await authCall({action:'profile', token: lsGet(SESSION_KEY) || '', wa, ref, consent:'1'});
+    if(res.status === 'ok'){ setProfileHint(false); setMsg('pf-msg','Merci, votre profil est enregistré.','ok'); setTimeout(()=>showScreen('screen-home'), 1200); }
+    else setMsg('pf-msg', res.message || 'Enregistrement impossible.', 'err');
+  }catch(e){ setMsg('pf-msg','Connexion requise pour enregistrer. Réessayez quand Internet est disponible.','err'); }
+  el('pf-send').disabled = false;
+}
+el('btn-feedback-open').addEventListener('click', showFeedback);
+el('btn-fb-res').addEventListener('click', showFeedback);
+el('btn-home-fb').addEventListener('click', ()=>showScreen('screen-home'));
+el('fb-send').addEventListener('click', sendFeedback);
+el('btn-profile-open').addEventListener('click', showProfile);
+el('btn-home-pf').addEventListener('click', ()=>showScreen('screen-home'));
+el('pf-send').addEventListener('click', sendProfile);
+
 // ================= AUTHENTIFICATION PAR CODE OTP (e-mail) =================
 // URL du service d'authentification (Google Apps Script, voir le guide) :
+const CLIENT_VERSION = '2'; // doit correspondre à CLIENT_VERSION dans Code.gs
 const AUTH_URL = 'https://script.google.com/macros/s/AKfycbw0H5TtDbNsFBdlsNpXF-2e0GLlmWwOrsqtwJMzkovIyLUAGWn-KND7pD5s2zfqe2qmqw/exec';
 const VALIDATOR_EMAIL = 'kgbgroup6@gmail.com';
 const SESSION_KEY = 'permisb229_session';
@@ -884,6 +1183,7 @@ function lsDel(k){ try{ localStorage.removeItem(k); }catch(e){} }
 function authMsg(t,cls){ const m=el('auth-msg'); m.textContent=t||''; m.className='auth-msg '+(cls||''); }
 function unlock(){
   document.body.classList.remove('locked');
+  el('profile-hint').style.display = (lsGet('permisb229_np') === '1') ? '' : 'none';
   if(!el('btn-logout')){
     const b=document.createElement('button'); b.id='btn-logout'; b.className='logout-btn'; b.textContent='Déconnexion';
     b.onclick=async()=>{ lsDel(SESSION_KEY); await idbDel(); location.reload(); };
@@ -895,7 +1195,7 @@ async function authCall(params, ms){
   const ctl = new AbortController();
   const timer = setTimeout(()=>ctl.abort(), ms || 20000);
   try{
-    const r = await fetch(AUTH_URL + '?' + new URLSearchParams(params).toString(), {signal: ctl.signal});
+    const r = await fetch(AUTH_URL + '?' + new URLSearchParams(Object.assign({cv: CLIENT_VERSION}, params)).toString(), {signal: ctl.signal});
     return await r.json();
   } finally { clearTimeout(timer); }
 }
@@ -905,6 +1205,7 @@ async function fetchData(tok){
     if(res.code==='session') throw new Error('SESSION');
     throw new Error(res.message||'Impossible de charger les questions.');
   }
+  if(res.needProfile !== undefined) lsSet('permisb229_np', res.needProfile ? '1' : '0');
   const rec = {v:res.v||0, data:res.data, savedAt:Date.now(), checkedAt:Date.now()};
   await idbSet(rec);
   return rec;
@@ -925,6 +1226,7 @@ async function backgroundCheck(tok, rec){
   try{
     const res = await authCall({action:'check', token:tok}, 20000);
     if(res.status==='ok'){
+      if(res.needProfile !== undefined) setProfileHint(!!res.needProfile);
       rec.checkedAt = Date.now();
       if(res.v && res.v!==rec.v){ try{ await fetchData(tok); }catch(e){ await idbSet(rec); } }
       else await idbSet(rec);
@@ -933,25 +1235,37 @@ async function backgroundCheck(tok, rec){
     }
   }catch(e){ /* hors ligne : on continue avec la copie locale */ }
 }
-async function authSend(){
-  const email = el('auth-email').value.trim().toLowerCase();
-  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ authMsg('Adresse e-mail invalide.','err'); return; }
-  authMsg('Envoi en cours…'); el('auth-send').disabled=true;
+async function authRequest(extra){
+  authMsg('Envoi en cours…'); el('auth-send').disabled=true; el('auth-info-send').disabled=true;
   try{
-    const res = await authCall({action:'request', email});
+    const res = await authCall(Object.assign({action:'request', email:authEmail}, extra||{}));
     if(res.status==='otp_sent'){
-      authEmail = email;
-      el('auth-step-email').style.display='none'; el('auth-step-code').style.display='';
-      el('auth-code-info').textContent='Un code à 6 chiffres a été envoyé à '+email+' (valable 10 minutes).';
+      el('auth-step-email').style.display='none'; el('auth-step-info').style.display='none'; el('auth-step-code').style.display='';
+      el('auth-code-info').textContent='Un code à 6 chiffres a été envoyé à '+authEmail+' (valable 10 minutes).';
       authMsg('');
       el('auth-code').focus();
+    } else if(res.status==='need_info'){
+      el('auth-step-email').style.display='none'; el('auth-step-info').style.display='';
+      authMsg(res.message||'','err');
     } else if(res.status==='pending'){
+      el('auth-step-info').style.display='none'; el('auth-step-email').style.display='';
       authMsg('Votre demande d’accès a été transmise au validateur. Vous recevrez un e-mail dès qu’elle sera approuvée, puis vous pourrez demander votre code.','ok');
     } else if(res.status==='rejected'){
       authMsg('Accès refusé pour cette adresse.','err');
     } else { authMsg(res.message||'Erreur, réessayez.','err'); }
   }catch(e){ authMsg(e.message||'Connexion impossible.','err'); }
-  el('auth-send').disabled=false;
+  el('auth-send').disabled=false; el('auth-info-send').disabled=false;
+}
+async function authSend(){
+  const email = el('auth-email').value.trim().toLowerCase();
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ authMsg('Adresse e-mail invalide.','err'); return; }
+  authEmail = email;
+  await authRequest();
+}
+async function authInfoSend(){
+  const wa = el('auth-wa').value.trim(), ref = el('auth-ref').value.trim();
+  if(!wa || !ref || !el('auth-consent').checked){ authMsg('Renseignez votre numéro WhatsApp, la personne qui vous a recommandé l’application, et cochez la case d’accord.','err'); return; }
+  await authRequest({wa, ref, consent:'1'});
 }
 async function authVerify(){
   const code = el('auth-code').value.trim();
@@ -970,6 +1284,8 @@ async function authVerify(){
 }
 async function authInit(){
   el('auth-send').onclick=authSend;
+  el('auth-info-send').onclick=authInfoSend;
+  el('auth-info-back').onclick=()=>{ el('auth-step-info').style.display='none'; el('auth-step-email').style.display=''; authMsg(''); };
   el('auth-verify').onclick=authVerify;
   el('auth-resend').onclick=()=>{ el('auth-email').value=authEmail; el('auth-step-code').style.display='none'; el('auth-step-email').style.display=''; authSend(); };
   el('auth-back').onclick=()=>{ el('auth-step-code').style.display='none'; el('auth-step-email').style.display=''; authMsg(''); };
