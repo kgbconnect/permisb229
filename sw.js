@@ -1,5 +1,5 @@
 /* PermisB_229 — service worker : permet d'ouvrir l'application sans Internet après la première visite. */
-const CACHE = 'permisb229-v1';
+const CACHE = 'permisb229-v2';
 const FILES = ['./', 'index.html', 'manifest.json', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {

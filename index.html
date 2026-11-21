@@ -1092,7 +1092,7 @@ function fbRender(){
     box.appendChild(b);
   }
 }
-function showFeedback(){ fbRating = 0; el('fb-comment').value = ''; setMsg('fb-msg',''); fbRender(); showScreen('screen-feedback'); }
+function openFeedbackScreen(){ fbRating = 0; el('fb-comment').value = ''; setMsg('fb-msg',''); fbRender(); showScreen('screen-feedback'); }
 async function sendFeedback(){
   if(!fbRating){ setMsg('fb-msg','Choisissez une note de 1 à 5 étoiles.','err'); return; }
   setMsg('fb-msg','Envoi en cours…'); el('fb-send').disabled = true;
@@ -1116,8 +1116,8 @@ async function sendProfile(){
   }catch(e){ setMsg('pf-msg','Connexion requise pour enregistrer. Réessayez quand Internet est disponible.','err'); }
   el('pf-send').disabled = false;
 }
-el('btn-feedback-open').addEventListener('click', showFeedback);
-el('btn-fb-res').addEventListener('click', showFeedback);
+el('btn-feedback-open').addEventListener('click', openFeedbackScreen);
+el('btn-fb-res').addEventListener('click', openFeedbackScreen);
 el('btn-home-fb').addEventListener('click', ()=>showScreen('screen-home'));
 el('fb-send').addEventListener('click', sendFeedback);
 el('btn-profile-open').addEventListener('click', showProfile);
